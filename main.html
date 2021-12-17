@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Rock Paper Scissors</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Paper Scissors</title>
 
-    <link href="main.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <h2>Rock Paper Scissors</h2>
-    
-    <!-- 결과메세지 출력 -->
-    <span id="resultText"></span> <br/><br/>
-    
-   <!-- 이긴 횟수-->
-    <input type="text" id="youWinCounter" size="25px" value="0">
-    <input type="text" id="computerWinCounter" size="25px" value="0">
-    <br/>
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h2>Rock Paper Scissors</h2>
+        
+        <!-- 결과메세지 출력 -->
+        <span id="resultText"></span> <br/><br/>
+        
+    <!-- 이긴 횟수-->
+        <input type="text" id="youWinCounter" size="25px" value="0" readonly="true">
+        <input type="text" id="computerWinCounter" size="25px" value="0" readonly="true">
+        <br/>
 
-    <!-- 가위바위보 이미지 출력-->
-    <img id="youSubmit" src="./img/black.png" sizes="10px"></img>
-    <img id="computerSubmit" src="./img/black.png" sizes="10px"></img>
-
-
-    <p>Choose One !</p>
-
-    <!-- 낼것 고르기 -->
-    <button type="button" id="rockButton">주먹</button>
-    <button id="paperButton">보</button>
-    <button id="scissorsButton">가위</button>
-
-    <!-- 확률-->
-    <br/><br/>
-    주먹 : <input type="text" id="rockPer" size="1px" value="34" onkeyup="rockPerSum()">% 
-    보 : <input type="text" id="paperkPer" size="1px" value="33" onkeyup="paperPerSum()">%
-    가위 : <input type="text" id="scissorsPer" size="1px" value="33" onkeyup="scissorsPerSum()">%
+        <!-- 가위바위보 이미지 출력-->
+        <img id="youSubmit" src="./img/black.png" sizes="10px"></img>
+        <img id="computerSubmit" src="./img/black.png" sizes="10px"></img>
 
 
-    <script src="main.js"></script>
-    
-</body>
+        <p>Choose One !</p>
+
+        <!-- 낼것 고르기 -->
+        <button type="button" id="rockButton" value="rock">주먹</button>
+        <button type="button" id="paperButton" value="paper">보</button>
+        <button type="button" id="scissorsButton" value="scissors">가위</button>
+
+        <!-- 확률-->
+        <br/><br/>
+        주먹 : <input type="text" id="rockPer" size="1px" value="34">% 
+        보 : <input type="text" id="paperPer" size="1px" value="33">%
+        가위 : <input type="text" id="scissorsPer" size="1px" value="33">%
+
+
+        <script src="main.js"></script>
+        
+    </body>
 </html>
